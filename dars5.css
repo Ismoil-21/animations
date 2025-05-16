@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+}
+
+.minibox{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: box 5s linear infinite;
+}
+
+@keyframes box{
+    10%{
+        background-color: black;
+        left: 200px;
+        top: 0;
+    }
+
+    20%{
+        background-color: green;
+        left: 300px;
+        top: 0;
+    }
+
+    40%{
+        background-color: brown;
+        left: 300px;
+        top: 200px;
+    }
+
+    60%{
+        background-color: aqua;
+        left: 300px;
+        top: 300px;
+    }
+
+    80%{
+        background-color: blueviolet;
+        left: 200px;
+        top: 300px;
+    }
+
+    90%{
+        background-color: greenyellow;
+        left: 0;
+        top: 300px;
+    }
+
+    100%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+}
